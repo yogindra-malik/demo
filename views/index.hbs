@@ -1,0 +1,38 @@
+<h1>{{title}}</h1>
+<p>Library</p>
+
+
+<p>
+    <fieldset>
+        <legend>Available Books Data</legend>
+    <div>
+        The result is this:<br> {{#each Books}}
+        <div>
+            Book Name: {{this.name}}<br>
+        </div>
+        <div>
+            Author: {{this.by}}<br> {{/each}}
+        </div>
+    </div>
+    </fieldset>
+</p>
+
+
+<p>
+<form action="/addbook"id="form" method="POST" name="addbook">
+    <fieldset>
+        <legend>Add new Entry</legend>
+        <div>
+            Book Name :
+            <input placeholder="Book Name" name="name" type="text">
+            <div>
+                <div>
+                    Author :
+                    <input placeholder="By" name="by" type="text">
+                </div>
+                <div>
+                    <button type="submit" action="/addbook">Add a new Book</button>
+                </div>
+  </fieldset>
+</form>
+</p>
