@@ -37,5 +37,12 @@
 
         expect(foo).toEqual(foom);
       });
+
+       it("can have more than one expectation for demo purpose", function () {
+        var foo = 0;
+        var foom = 0;
+
+        expect(foo).toEqual(foom);
+      });
     });
   });
