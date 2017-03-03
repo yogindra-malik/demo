@@ -24,6 +24,7 @@ router.get('/bookscount', function (req, res) {
   console.log(count);
    res.send(count);
 });
+
 router.post('/addbook', function (req, res) {
   var db = req.db;
   var Name = req.body.name;
