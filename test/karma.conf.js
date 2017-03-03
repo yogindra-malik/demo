@@ -19,7 +19,8 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'spec/test.js'
+      'spec/test.js',
+       '../js/jquery-3.1.1.js'
     ],
 
     // list of files / patterns to exclude
@@ -66,9 +67,9 @@ module.exports = function (config) {
 
 
     // Uncomment the following lines if you are using grunt's server to run the tests
-    // proxies: {
-    //   '/': 'http://localhost:9000/'
-    // },
+     proxies: {
+       '/': 'http://localhost:3000/'
+     },
     // URL root prevent conflicts with the site root
     // urlRoot: '_karma_'
   });

@@ -15,10 +15,15 @@ router.get('/books', function (req, res) {
     res.render('index', {
       "Books": docs
     });
-    console.log(docs)
   });
 });
-
+router.get('/bookscount', function (req, res) {
+  var db = req.db;
+  var count = db.get('Books').count();
+// var count = db.get('Books').find().count();
+  console.log(count);
+   res.send(count);
+});
 router.post('/addbook', function (req, res) {
   var db = req.db;
   var Name = req.body.name;

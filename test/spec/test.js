@@ -1,10 +1,6 @@
+var base_url = "http://localhost:3000"
 
-  //var router = express.Router();
-
-
-  var base_url = "http://localhost:3000"
-
-  describe("Test head", function () {
+describe("Test head", function () {
   //   describe("GET /", function () {
   //     it("returns status code 200", function () {
   //       router.get(base_url, function (error, response, body) {
@@ -22,28 +18,25 @@
   //     });
   //   });
 
-    describe("Test", function () {
+  describe("Test", function () {
 
-      it("can have more than one expectation", function () {
-        var foo = 0;
-        foo += 1;
-
-        expect(foo).toEqual(1);
-      });
-
-      it("can have more than one expectation two", function () {
-        var foo = 0;
-        var foom = 0;
-
-        expect(foo).toEqual(foom);
-      });
-
-       it("can have more than one expectation for demo purpose", function () {
-        var foo = 0;
-        var foom = 0;
-
-        expect(foo).toEqual(foom);
+    it("can have more than one expectation get call", function (done) {
+      $.get('/bookscount', function (d) {
+        expect(d.count).toBe(5);
       });
     });
+
+  it("can have more than one expectation two", function () {
+    var foo = 0;
+    var foom = 9;
+    expect(foo).toEqual(foom);
   });
-  
+
+  it("can have more than one expectation for demo purpose", function () {
+    var foo = 0;
+    var foomt = 0;
+
+    expect(foo).toEqual(foomt);
+  });
+});
+});
