@@ -19,12 +19,22 @@ router.get('/books', function (req, res) {
 });
 router.get('/bookscount', function (req, res) {
   var db = req.db;
-  var count = db.get('Books').count();
-// var count = db.get('Books').find().count();
-  console.log(count);
-   res.send(count);
+  var collection = db.get('Books');
+collection.find({}, {}, function (e, docs) {
+  res.send({count:docs.length});
+    
+  });
 });
 
+
+router.get('/booksdata', function (req, res) {
+  var db = req.db;
+  var collection = db.get('Books');
+collection.find({}, {}, function (e, docs) {
+  res.send(docs);
+    
+  });
+});
 router.post('/addbook', function (req, res) {
   var db = req.db;
   var Name = req.body.name;

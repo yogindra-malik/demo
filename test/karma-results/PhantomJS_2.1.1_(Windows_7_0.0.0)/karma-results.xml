@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
-<testsuite name="PhantomJS 2.1.1 (Windows 7 0.0.0)" package="" timestamp="2017-01-30T13:59:24" id="0" hostname="II02-DVNYTC2" tests="2" errors="0" failures="0" time="0.002">
+<testsuite name="PhantomJS 2.1.1 (Windows 7 0.0.0)" package="" timestamp="2017-03-06T08:11:13" id="0" hostname="II02-DVNYTC2" tests="4" errors="0" failures="0" time="0.035">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
   </properties>
-  <testcase name="Test head Test can have more than one expectation" time="0.002" classname="PhantomJS_2_1_1_(Windows_7_0_0_0).Test head"/>
+  <testcase name="Test head Test can have more than one expectation get call" time="0.023" classname="PhantomJS_2_1_1_(Windows_7_0_0_0).Test head"/>
+  <testcase name="Test head Test can have more than one expectation get call check data" time="0.012" classname="PhantomJS_2_1_1_(Windows_7_0_0_0).Test head"/>
   <testcase name="Test head Test can have more than one expectation two" time="0" classname="PhantomJS_2_1_1_(Windows_7_0_0_0).Test head"/>
+  <testcase name="Test head Test can have more than one expectation for demo purpose" time="0" classname="PhantomJS_2_1_1_(Windows_7_0_0_0).Test head"/>
   <system-out>
     <![CDATA[
 ]]>
