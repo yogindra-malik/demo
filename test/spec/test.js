@@ -1,28 +1,11 @@
 var base_url = "http://localhost:3000"
 
 describe("Test head", function () {
-  //   describe("GET /", function () {
-  //     it("returns status code 200", function () {
-  //       router.get(base_url, function (error, response, body) {
-  //         expect(response.body).toBe(200);
-  //       });
-  //     });
-  //   });
-  // });
-  // describe("Hello World Server", function () {
-  //   describe("GET /", function () {
-  //     it("returns status code 200", function () {
-  //       router.get(base_url, function (error, response, body) {
-  //         expect(response.body).toBe(200);
-  //       });
-  //     });
-  //   });
-
   describe("Test", function () {
 
     it("can have more than one expectation get call", function (done) {
       $.get('/bookscount', function (d) {
-        expect(d.count).toBe(17);
+        expect(d.count).toBe(18);
         done();
       });
     });
